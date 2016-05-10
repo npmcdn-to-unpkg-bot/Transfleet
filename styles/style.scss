@@ -1,0 +1,74 @@
+body {
+	background-image: url('images/bgImage.jpg');
+	height: 100%;
+        .header {
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            width: 100%;
+            height: auto;
+            max-height: 80px;
+            background-color: black;
+            
+            .header-main-logo {
+                display: inline-block;
+                img {
+                    width: 140px;
+                    height: 110px; 
+                }
+            }
+
+            .header-main-inner {
+                display: inline-block;
+                .nav-main {
+                    display: block;
+                    margin: 0 auto 0 12px;
+                    .nav-main_ul {
+                        list-style-type: none;
+                        li {
+                            padding: 30px 14px 30px 14px;
+                            display: inline;
+
+                            a {
+                                color: white;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }	
+		    }
+        
+            .header-secondary-inner {
+                display: inline-block;
+                float: right;
+                .nav-secondary {
+                    display: block;
+                    margin: 0 auto 0 12px;
+                    align-items: center;
+                    .nav-secondary-ul { 
+                        padding-top: 25%;
+                        list-style-type: none;
+                        li {
+                            padding: 30px 14px 30px 14px;
+                            display: inline;
+                            
+                            a {
+                                color: white;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+            .logo-right {
+                display: inline-block;
+                img {
+                    text-align: right;
+                    width: 140px;
+                    height: 110px; 
+                }
+            }
+	}
+}
