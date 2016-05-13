@@ -1,35 +1,41 @@
 body {
 	background-image: url('images/bgImage.jpg');
 	height: 100%;
+    margin: 0px;
 	.header {
-		margin: 0;
-		padding: 0;
-		position: fixed;
-		width: 100%;
-		height: auto;
-        max-height: 100px;
-		background-color: black;
-        z-index: 2;
+        width: 100%;
+        display: inline-block;
 		.header-main-logo{
+            position: relative;
+            z-index: 3;
 			img {
 				max-width: 140px;
 				height: 110px;
                 float: left;
 			}
 		}
-
-
+        .header-no-logo {
+            margin: 0;
+            padding: 0 0 10px 0;
+            position: absolute;
+            width: 100%;
+            max-height: 100px;
+            background-color: #d8fff8;
+            z-index: 2;
+            display: inline-block;
+            opacity: 0.6;
+        }
         nav {
             display: inline-block;
             .nav-main_ul {
                 padding-top: 30px;
                 list-style-type: none;
                 li {
-                    padding: 30px 14px 30px 14px;
+                    padding: 0px 15px 0px 0px;
                     display: inline;
 
                     a {
-                        color: white;
+                        color: #000000;
                         text-decoration: none;
                         text-transform: uppercase;
                     }
@@ -39,6 +45,7 @@ body {
 	}
     .gallery {
         z-index: 1;
+        bottom: 115px;
      img {
          display:block;
          width: 100%;
@@ -96,7 +103,7 @@ http://flickity.metafizzy.co
 
 .flickity-prev-next-button {
   position: absolute;
-  top: 50%;
+  top: 57%;
   width: 44px;
   height: 44px;
   border: none;
@@ -163,7 +170,7 @@ http://flickity.metafizzy.co
 .flickity-page-dots {
   position: absolute;
   width: 100%;
-  bottom: -25px;
+  bottom: 5px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -178,7 +185,7 @@ http://flickity.metafizzy.co
   width: 10px;
   height: 10px;
   margin: 0 8px;
-  background: #333;
+  background: #fff;
   border-radius: 50%;
   filter: alpha(opacity=25); /* IE8 */
   opacity: 0.25;
