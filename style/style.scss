@@ -1,55 +1,57 @@
 body {
 	background-image: url('images/bgImage.jpg');
 	height: 100%;
-    padding: 0px;
     margin: 0px;
 	.header {
-		margin: 0;
-		padding: 0;
-		position: fixed;
-		width: 100%;
-		height: auto;
-        max-height: 100px;
-		background-color: black;
-        z-index: 2;
+        width: 100%;
+        display: inline-block;
+            a:after {
+                content: '';
+                display: block;
+                margin: auto;
+                height: 3px;
+                width: 0px;
+                background: transparent;
+                transition: width .5s ease, background-color .5s ease;
+             }
+         a:hover:after {
+            width: 100%;
+            background: #0FFFD6;
+        }
 		.header-main-logo{
+            position: relative;
+            z-index: 3;
 			img {
 				max-width: 140px;
 				height: 110px;
                 float: left;
 			}
 		}
-
-
+        .header-no-logo {
+            margin: 0;
+            padding: 0 0 80px 0;
+            position: relative;
+            width: 100%;
+            max-height: 100px;
+            background-color: #d8fff8;
+            z-index: 2;
+            opacity: 0.6;
+        }
         nav {
             display: inline-block;
             .nav-main_ul {
                 padding-top: 30px;
                 list-style-type: none;
+                position: absolute;
                 li {
-                    padding: 30px 14px 30px 14px;
+                    padding: 0px 15px 0px 0px;
                     display: inline;
+                    float: left;
 
                     a {
-                        color: white;
+                        color: #000000;
                         text-decoration: none;
                         text-transform: uppercase;
-                        display: inline-block;
-                        position: relative;
-                        padding-bottom: 3px;
-                    }
-                    a:after {
-                        content: '';
-                        display: block;
-                        margin: auto;
-                        height: 3px;
-                        width: 0px;
-                        background: transparent;
-                        transition: width .5s ease, background-color .5s ease;
-                    }
-                    a:hover:after {
-                        width: 100%;
-                        background: #0FFFD6;
                     }
                 }
             }
@@ -57,39 +59,11 @@ body {
 	}
     .gallery {
         z-index: 1;
+        bottom: 115px;
      img {
          display:block;
          width: 100%;
          height: 500px;
-        }
-    }
-    .homepage-content {
-        .row {
-            margin-left: -15px;
-            margin-right: -15px;
-            
-            .col-md-6 {
-                width: auto;
-                padding-top: 10%;
-            }
-            #box-1 {
-                margin-left: 2.5%;
-                margin-right: 2.5%;
-            }
-            #box-2 {
-                float: right;
-                margin-right: 2.5%;
-                margin-left: 2.5%;
-            }
-            #box-3 {
-               margin-left: 2.5%;
-               margin-right: 2.5%;
-            }
-            #box-4 {
-               float: right;
-               margin-right: 2.5%;
-               margin-left: 2.5%;
-            }
         }
     }
     
@@ -143,7 +117,7 @@ http://flickity.metafizzy.co
 
 .flickity-prev-next-button {
   position: absolute;
-  top: 50%;
+  top: 57%;
   width: 44px;
   height: 44px;
   border: none;
@@ -210,7 +184,7 @@ http://flickity.metafizzy.co
 .flickity-page-dots {
   position: absolute;
   width: 100%;
-  bottom: -25px;
+  bottom: 5px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -225,7 +199,7 @@ http://flickity.metafizzy.co
   width: 10px;
   height: 10px;
   margin: 0 8px;
-  background: #333;
+  background: #fff;
   border-radius: 50%;
   filter: alpha(opacity=25); /* IE8 */
   opacity: 0.25;
