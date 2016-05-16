@@ -1,55 +1,57 @@
 body {
 	background-image: url('images/bgImage.jpg');
 	height: 100%;
-    padding: 0px;
     margin: 0px;
 	.header {
-		margin: 0;
-		padding: 0;
-		position: fixed;
-		width: 100%;
-		height: auto;
-        max-height: 100px;
-		background-color: black;
-        z-index: 2;
+        width: 100%;
+        display: inline-block;
+            a:after {
+                content: '';
+                display: block;
+                margin: auto;
+                height: 3px;
+                width: 0px;
+                background: transparent;
+                transition: width .5s ease, background-color .5s ease;
+             }
+         a:hover:after {
+            width: 100%;
+            background: #0FFFD6;
+        }
 		.header-main-logo{
+            position: relative;
+            z-index: 3;
 			img {
 				max-width: 140px;
 				height: 110px;
                 float: left;
 			}
 		}
-
-
+        .header-no-logo {
+            margin: 0;
+            padding: 0 0 80px 0;
+            position: relative;
+            width: 100%;
+            max-height: 100px;
+            background-color: black;
+            z-index: 2;
+            opacity: 0.6;
+        }
         nav {
             display: inline-block;
             .nav-main_ul {
                 padding-top: 30px;
                 list-style-type: none;
+                position: absolute;
                 li {
-                    padding: 30px 14px 30px 14px;
+                    padding: 0px 15px 0px 0px;
                     display: inline;
+                    float: left;
 
                     a {
                         color: white;
                         text-decoration: none;
                         text-transform: uppercase;
-                        display: inline-block;
-                        position: relative;
-                        padding-bottom: 3px;
-                    }
-                    a:after {
-                        content: '';
-                        display: block;
-                        margin: auto;
-                        height: 3px;
-                        width: 0px;
-                        background: transparent;
-                        transition: width .5s ease, background-color .5s ease;
-                    }
-                    a:hover:after {
-                        width: 100%;
-                        background: #0FFFD6;
                     }
                 }
             }
@@ -57,6 +59,7 @@ body {
 	}
     .gallery {
         z-index: 1;
+        bottom: 115px;
      img {
          display:block;
          width: 100%;
@@ -64,35 +67,110 @@ body {
         }
     }
     .homepage-content {
-        .row {
-            margin-left: -15px;
-            margin-right: -15px;
-            
-            .col-md-6 {
-                width: auto;
-                padding-top: 10%;
+        .container {
+            width: 100%;
+            text-align: center;
+            .caption-style-4 {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                li:nth-child(1) {
+                    margin-right: 200px;
+                }
+                li:nth-child(4) {
+                    margin-right: 200px;
+                } 
                 
+                
+                li {
+                    display: inline-block;
+                    padding: 0;
+                    position: relative;
+                    overflow: hidden;
+                    margin-bottom: 80px;
+                    img {
+                        margin: 0px;
+                        padding: 0px;
+                        float: left;
+                        z-index: 4;
+                        
+                        -webkit-transition:all 0.25s ease-in-out;
+                        -moz-transition:all 0.25s ease-in-out;
+                        -o-transition:all 0.25s ease-in-out;
+                        -ms-transition:all 0.25s ease-in-out;
+                        transition:all 0.25s ease-in-out;
+                    }
+                    .caption {
+                        cursor: pointer;
+                        position: absolute;
+                        opacity: 0;
+                        -webkit-transition:all 0.45s ease-in-out;
+                        -moz-transition:all 0.45s ease-in-out;
+                        -o-transition:all 0.45s ease-in-out;
+                        -ms-transition:all 0.45s ease-in-out;
+                        transition:all 0.45s ease-in-out;
+                        .blur {
+                            background-color: rgba(0,0,0,0.65);
+                            height: 300px;
+                            width: 400px;
+                            z-index: 5;
+                            position: absolute;
+                        }
+                        .caption-text{
+                            z-index: 10;
+                            color: #fff;
+                            position: absolute;
+                            width: 400px;
+                            height: 300px;
+                            text-align: center;
+                            top:100px;
+                            h1 {
+                                text-transform: uppercase;
+                                font-size: 24px;
+                            }
+                        }
+                    }
+                }
+                li:hover {
+                    img {
+                        opacity: 1;
+                        transform: scale(1.15,1.15);
+                        -webkit-transform:scale(1.15,1.15);
+                        -moz-transform:scale(1.15,1.15);
+                        -ms-transform:scale(1.15,1.15);
+                        -o-transform:scale(1.15,1.15);
+                    }
+                    .caption {
+                        opacity: 1;
+                    }
+                }
             }
-            #box-1 {
-                margin-left: 2.5%;
-                margin-right: 2.5%;
-            }
-            #box-2 {
-                float: right;
-                margin-right: 2.5%;
-                margin-left: 2.5%;
-            }
-            #box-3 {
-               margin-left: 2.5%;
-               margin-right: 2.5%;
-            }
-            #box-4 {
-               float: right;
-               margin-right: 2.5%;
-               margin-left: 2.5%;
-            }
+                .row {
+                    margin-left: -15px;
+                    margin-right: -15px;
+
+                    #box-1 {
+                        margin-left: 2.5%;
+                        margin-right: 2.5%;
+                    }
+                    #box-2 {
+                        float: right;
+                        margin-right: 2.5%;
+                        margin-left: 2.5%;
+                    }
+                    #box-3 {
+                       margin-left: 2.5%;
+                       margin-right: 2.5%;
+                    }
+                    #box-4 {
+                       float: right;
+                       margin-right: 2.5%;
+                       margin-left: 2.5%;
+                    }
+                }
         }
     }
+    
     
     //FLICKITY BEGIN 
     
