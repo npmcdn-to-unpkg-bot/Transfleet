@@ -1,8 +1,7 @@
 body {
-  background-image: url("images/bgImage.jpg");
   height: 100%;
-  padding: 0px;
   margin: 0px;
+  padding: 0px 30px;
     /*! Flickity v1.2.1
 http://flickity.metafizzy.co
 ---------------------------------------------- */
@@ -12,70 +11,118 @@ http://flickity.metafizzy.co
   /* color & size if no SVG - IE8 and Android 2.3 */
   /* ---- page dots ---- */ }
   body .header {
-    margin: 0;
-    padding: 0;
-    position: fixed;
     width: 100%;
-    height: auto;
-    max-height: 100px;
-    background-color: black;
-    z-index: 2; }
-    body .header .header-main-logo img {
-      max-width: 140px;
-      height: 110px;
-      float: left; }
+    display: inline-block; }
+    body .header a:after {
+      content: '';
+      display: block;
+      margin: auto;
+      height: 3px;
+      width: 0px;
+      background: transparent;
+      transition: width .5s ease, background-color .5s ease; }
+    body .header a:hover:after {
+      width: 100%;
+      background: #0FFFD6; }
+    body .header .header-main-logo {
+      position: relative;
+      z-index: 3; }
+      body .header .header-main-logo img {
+        max-width: 140px;
+        height: 110px;
+        float: left; }
+    body .header .header-no-logo {
+      margin: 0;
+      padding: 0 0 80px 0;
+      position: relative;
+      width: 100%;
+      max-height: 100px;
+      background-color: #000000;
+      z-index: 2;
+      opacity: 0.6; }
     body .header nav {
       display: inline-block; }
       body .header nav .nav-main_ul {
         padding-top: 30px;
-        list-style-type: none; }
+        list-style-type: none;
+        position: absolute; }
         body .header nav .nav-main_ul li {
-          padding: 30px 14px 30px 14px;
-          display: inline; }
+          padding: 0px 15px 0px 0px;
+          display: inline;
+          float: left; }
           body .header nav .nav-main_ul li a {
-            color: white;
+            color: #d8fff8;
             text-decoration: none;
-            text-transform: uppercase;
-            display: inline-block;
-            position: relative;
-            padding-bottom: 3px; }
-          body .header nav .nav-main_ul li a:after {
-            content: '';
-            display: block;
-            margin: auto;
-            height: 3px;
-            width: 0px;
-            background: transparent;
-            transition: width .5s ease, background-color .5s ease; }
-          body .header nav .nav-main_ul li a:hover:after {
-            width: 100%;
-            background: #0FFFD6; }
+            text-transform: uppercase; }
   body .gallery {
-    z-index: 1; }
+    z-index: 1;
+    bottom: 115px; }
     body .gallery img {
       display: block;
       width: 100%;
       height: 500px; }
-  body .homepage-content .row {
-    margin-left: -15px;
-    margin-right: -15px; }
-    body .homepage-content .row .col-md-6 {
-      width: auto;
-      padding-top: 10%; }
-    body .homepage-content .row #box-1 {
-      margin-left: 2.5%;
-      margin-right: 2.5%; }
-    body .homepage-content .row #box-2 {
-      float: right;
-      margin-right: 2.5%;
-      margin-left: 2.5%; }
-    body .homepage-content .row #box-3 {
-      margin-left: 2.5%;
-      margin-right: 2.5%; }
-    body .homepage-content .row #box-4 {
-      float: right;
-      margin-right: 2.5%;
-      margin-left: 2.5%; }
+  body .homepage-content .container {
+    width: 100%;
+    text-align: center; }
+    body .homepage-content .container .caption-style-4 {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px; }
+      body .homepage-content .container .caption-style-4 li:nth-child(1) {
+        margin-right: 200px; }
+      body .homepage-content .container .caption-style-4 li:nth-child(4) {
+        margin-right: 200px; }
+      body .homepage-content .container .caption-style-4 li {
+        display: inline-block;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 80px; }
+        body .homepage-content .container .caption-style-4 li img {
+          margin: 0px;
+          padding: 0px;
+          float: left;
+          z-index: 4;
+          -webkit-transition: all 0.25s ease-in-out;
+          -moz-transition: all 0.25s ease-in-out;
+          -o-transition: all 0.25s ease-in-out;
+          -ms-transition: all 0.25s ease-in-out;
+          transition: all 0.25s ease-in-out; }
+        body .homepage-content .container .caption-style-4 li .caption {
+          cursor: pointer;
+          position: absolute;
+          opacity: 0;
+          -webkit-transition: all 0.45s ease-in-out;
+          -moz-transition: all 0.45s ease-in-out;
+          -o-transition: all 0.45s ease-in-out;
+          -ms-transition: all 0.45s ease-in-out;
+          transition: all 0.45s ease-in-out; }
+          body .homepage-content .container .caption-style-4 li .caption .blur {
+            background-color: rgba(0, 0, 0, 0.65);
+            height: 300px;
+            width: 400px;
+            z-index: 5;
+            position: absolute; }
+          body .homepage-content .container .caption-style-4 li .caption .caption-text {
+            z-index: 10;
+            color: #fff;
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            text-align: center;
+            top: 100px; }
+            body .homepage-content .container .caption-style-4 li .caption .caption-text h1 {
+              text-transform: uppercase;
+              font-size: 24px; }
+      body .homepage-content .container .caption-style-4 li:hover img {
+        opacity: 1;
+        transform: scale(1.15, 1.15);
+        -webkit-transform: scale(1.15, 1.15);
+        -moz-transform: scale(1.15, 1.15);
+        -ms-transform: scale(1.15, 1.15);
+        -o-transform: scale(1.15, 1.15); }
+      body .homepage-content .container .caption-style-4 li:hover .caption {
+        opacity: 1; }
   body .flickity-enabled {
     position: relative; }
   body .flickity-enabled:focus {
@@ -104,7 +151,7 @@ http://flickity.metafizzy.co
     cursor: grabbing; }
   body .flickity-prev-next-button {
     position: absolute;
-    top: 50%;
+    top: 57%;
     width: 44px;
     height: 44px;
     border: none;
@@ -154,7 +201,7 @@ http://flickity.metafizzy.co
   body .flickity-page-dots {
     position: absolute;
     width: 100%;
-    bottom: -25px;
+    bottom: 5px;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -167,7 +214,7 @@ http://flickity.metafizzy.co
     width: 10px;
     height: 10px;
     margin: 0 8px;
-    background: #333;
+    background: #fff;
     border-radius: 50%;
     filter: alpha(opacity=25);
     /* IE8 */
