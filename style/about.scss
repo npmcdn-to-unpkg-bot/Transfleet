@@ -1,0 +1,121 @@
+body {
+    .header {
+        position: absolute;
+        width: 97%;
+    }
+    .about-banner {
+        background-size: cover;
+        background-position: 50% 50%;
+        background-image: url('../images/PANO_20160223_085748.jpg');
+        z-index: 1;
+    
+        .container {
+            .row {
+                width: 100%;
+                .col-md-6 {
+                    display: inline-block;
+                    float: right;
+                    padding-top: 20%;
+                    .about-text {
+                        background: transparent url('../images/about-story-background.png') no-repeat 0 0 scroll;
+                        .about-story {
+                            text-align: center;
+                            color: #fff;
+                            text-shadow: 4px 4px 0 rgba(0,0,0,0.5);
+                        }
+                    }
+                }
+                #contacts {
+                    display: inline-block;
+                    ul {
+                        padding-top: 60%;
+                        text-align: center;
+                        li {
+                            padding-top: 5%;
+                            list-style-type: none;
+                            color: white;
+                            transition: opacity 0.5s;
+                            
+                        }
+                        li:hover {
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+        }
+        .parent {
+            position: relative;
+        }
+    }
+    /*.container-fluid {
+        padding: 0;
+        .jumbotron {
+            background-image: url('../images/New-York-City-Light-Building.jpg');
+            margin: 0;
+            padding: 5% 6% 5% 6%;
+            .container {
+                .row {
+                    text-align: center; 
+                    .col-md-4 {
+                        display: inline-block;
+                        text-align: center;
+                        p {
+                            color: white;
+                        }
+                    }
+                    #contacts {
+                        padding-top: 15%;
+                    }
+                }
+            }
+        }
+    }*/
+    .about-content {
+        padding-top: 3%;
+        background-color: azure;
+        .container {
+            .row {
+                h1 {
+                    text-align: center;
+                    color: black; 
+                    font-size: 50px;
+                }
+                p {
+                    font-family: "calibri", Garamond, 'Comic Sans';
+                    color: #000000;
+                    margin-bottom: 0px;
+                    font-size: 25px;
+                    text-align: center;
+                    padding-bottom: 5%;
+                }
+            }
+        }
+    }
+    .thumbnails-div {
+        width: 100%;
+        background-color: azure;
+        padding-top: 6%;
+        .container {
+            .row {
+                .col-md-4 {
+                    .thumbnail {
+                        padding: 0;
+                        border: 0;
+                        background: transparent;
+                        img {
+                            width: 261px;
+                            height: 199px;
+                        }
+                        h1 {
+                            text-align: center;
+                        }
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
