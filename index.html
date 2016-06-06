@@ -15,86 +15,69 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="scripts/bootstrap.min.js"></script>
+      <script src="scripts/main.js"></script>
+      <script src="js/modernizr.js"></script> <!-- Modernizr -->
       
   </head>    
-      <script src="jquery.mCustomScrollbar.concat.min.js"></script>
-      <script>
-    (function($){
-        $(window).load(function(){
-            $('body').mCustomScrollbar({
-            	theme:"rounded"
-            });  
-        }); 
-    })(jQuery); 
-</script>
-  </head>
     
-  <body>
+<body>
+<div class="container" id="header-container">
     <header class="header js-header">
         <div class="header-main-logo">
             <img src="images/BoldLogo2.jpg">
         </div>
-        <nav class="navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
+        
+            <nav class="navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produdcts<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Catalogue</a></li>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produdcts<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Catalogue</a></li>
+                      </ul>
+                        <li><a href="about.html">Contact</a></li>
+                    </li>
                   </ul>
-                    <li><a href="about.html">Contact</a></li>
-                </li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li class="nav-visit"><a href="#">Schedule a visit</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-visit"><a href="#">Schedule a visit</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
     </header>        
+</div>
       
-        <div class="header-no-logo">
-			<nav class="nav-main">
-				<ul class="nav-main_ul">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contacts</a></li>
-					<li><a href="#">Products</a></li>
-				</ul>
-			</nav> 
-        </div>
-    </header>
-      
-      <!-- START OF FLOCKITY -->
+      <!-- START OF FLICKITY -->
 <div class="gallery js-flickity"
   data-flickity-options='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": true }'>
   <img src="images/panoramaSmall.jpg" alt="peizaj" />
-  <img src="images/panoramaSmall2.jpg" alt="submerged" />
+  <img src="images/panoramaSmall2.jpg" alt="submerged" />   
+  <img src="images/paniramaSmall3.jpg" alt="submerged" />
 </div>    
       <!-- FLICKITY END -->
       
-     <!-- START HOMEPAGE CONTENT -->
-      <div class="homepage-content">
-          <div class="container">
-              
-              <div class="row">
-                  
-                  
-                  
+
+    <!-- START HOMEPAGE CONTENT -->
+<div class="homepage-background">
+    <div class="homepage-content">
+        <div class="container">
+
+            <div class="row">
+                <img class="img-responsive" src="images/lineTop.png">
                 <div class="col-md-6" id="caption-style-4">
                     <div class="caption-boxes" id="box-1">
                         <img src="images/400x300.svg" class="img-responsive">
@@ -106,25 +89,10 @@
                             </div>
                         </div>
                     </div>
-                 </div>   
-                  <div class="col-md-6" id="caption-style-4">
-			         <div class="caption-boxes" id="box-2">
-                        <img src="images/400x300.svg" class="img-responsive">
-                        <div class="caption">
-                            <div class="blur"></div>
-                            <div class="caption-text">
-                                <h1>Amazing Caption</h1>
-                                <p>Whatever It Is - Always Awesome</p>
-                            </div>
-                        </div>
-			         </div> 
-                  </div>
-              </div>
-              
-              <div class="row">
-                  
+                </div> 
+
                 <div class="col-md-6" id="caption-style-4">
-                    <div class="caption-boxes" id="box-1">
+                    <div class="caption-boxes" id="box-2">
                         <img src="images/400x300.svg" class="img-responsive">
                         <div class="caption">
                             <div class="blur"></div>
@@ -134,35 +102,52 @@
                             </div>
                         </div>
                     </div>
-                 </div>  
-                  
-                  
-                  
-                  <div class="col-md-6" id="caption-style-4">
-			         <div class="caption-boxes" id="box-2">
-                        <img src="images/400x300.svg" class="img-responsive">
-                        <div class="caption">
-                            <div class="blur"></div>
-                            <div class="caption-text">
-                                <h1>Amazing Caption</h1>
-                                <p>Whatever It Is - Always Awesome</p>
-                            </div>
-                        </div>
-			         </div> 
-                  </div>
                 </div>
-              </div>
-          </div>
-      </div>
+                <img class="img-responsive" src="images/lineCenterPart2.png">
+            </div>
+
             
-      
-      <!-- HOMEPAGE CONTENT END -->
+            
+            <div class="row">
+                <img class="img-responsive" src="images/lineCenterPart1.png">
+                <div class="col-md-6" id="caption-style-4">
+                    <div class="caption-boxes" id="box-3">
+                        <img src="images/400x300.svg" class="img-responsive">
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h1>Amazing Caption</h1>
+                                <p>Whatever It Is - Always Awesome</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      <!-- FOOTER START -->
 
+                <div class="col-md-6" id="caption-style-4">
+                    <div class="caption-boxes" id="box-4">
+                        <img src="images/400x300.svg" class="img-responsive">
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h1>Amazing Caption</h1>
+                                <p>Whatever It Is - Always Awesome</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="img-responsive" src="images/lineBottom.png">
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- HOMEPAGE CONTENT END -->
+    
+<!-- FOOTER START -->
+    <div class="container" id="footer-container">
       <footer class="footer">
         
-        <a href=""></a>
+        <a class="to-top" href="#0"></a>
         <div class="footer-content">
           <div class="footer-content-col1">
             <h5>Heading one</h5>
@@ -173,22 +158,45 @@
               <li><a href="#">First link</a></li>
             </ul>
           </div>
-          <div class="footer-content-col2"></div>
-          <div class="footer-content-col3"></div>
-          <div class="footer-content-col4"></div>
+            
+          <div class="footer-content-col2">
+            <h5>Heading two</h5>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Google+</a></li>
+            </ul>
+          </div>
+            
+          <div class="footer-content-col3">
+            <h5>Heading two</h5>
+            <ul>
+              <li><a href="#">First link</a></li>
+              <li><a href="#">Second link</a></li>
+              <li><a href="#">Third link</a></li>
+              <li><a href="#">Fourth link</a></li>
+            </ul>    
+          </div>
+            
+          <div class="footer-content-col4">
+            <h5>Heading two</h5>
+            <ul>
+              <li><a href="#">First link</a></li>
+              <li><a href="#">Second link</a></li>
+              <li><a href="#">Third link</a></li>
+              <li><a href="#">Fourth link</a></li>
+            </ul>  
+          </div>
         </div>
         <div class="footer-bar"></div>
         <div class="footer=t&c"></div>
 
       </footer>
-
+    </div>
 
       <!-- FOOTER END -->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="scripts/bootstrap.min.js"></script>
+    
       
   </body>
 </html>
