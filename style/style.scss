@@ -360,3 +360,16 @@ http://flickity.metafizzy.co
         }
     }
 }
+
+// FOOTER START
+footer {
+  .footer-content {
+    width: 100%;
+    text-align: left;
+    background: #d8fff8;
+    .footer-content-col1 {
+      float: left;
+      max-width: 200px;
+    }
+  }
+}
