@@ -1,0 +1,264 @@
+@font-face {font-family: Engineering; src: url('../Fonts/Siliwangi Engineering/Siliwangi Engineering.otf')}
+
+body {
+    height: 100%;
+    margin: 0px 20px;
+    background: url('../images/bgImage2.jpg');
+    
+    
+     #header-container {
+        position: relative;
+        width: 100%;
+        padding: 0px;
+        .header {
+            width: 100%;
+            display: inline-block;
+            position: absolute;
+            z-index: 4;
+                a:after {
+                    content: '';
+                    display: block;
+                    margin: auto;
+                    height: 3px;
+                    width: 0px;
+                    background: transparent;
+                    transition: width .5s ease, background-color .5s ease;
+                 }
+             a:hover:after {
+                width: 100%;
+                background: #0FFFD6;
+            }
+            .header-main-logo{
+                position: relative;
+                z-index: 4;
+                min-height: 110px;
+                display: inline-block;
+                float: left;
+                img {
+                    max-width: 140px;
+                    max-height: 110px;
+                    float: left;
+                }
+            }
+            .header-no-logo {
+                margin: 0;
+                padding: 0 0 80px 0;
+                position: relative;
+                width: 100%;
+                max-height: 100px;
+                background-color: #000000;
+                z-index: 2;
+            }
+
+
+            nav {
+                font-size: 18px;
+                font-weight: 200;
+                z-index: 3;
+                background-color: azure;
+           //   max-height: 80px;
+                opacity: 0.7;
+                .nav-main_ul {
+           //       padding-top: 30px;
+                    list-style-type: none;
+            //      position: absolute;
+                    li {
+                        padding: 0px 15px 0px 0px;
+                        display: inline;
+                        float: left;
+
+                        a {
+                            color: #000000;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+        
+    .products-banner {
+        background: url('../images/2013-07-18-094.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+        height: 100%;
+        background-color: #060;
+        color: #fff;
+        text-align: center;
+        text-shadow: 0 1px 3px rgba(0,0,0,.5);
+        .container {
+            width: 100%;
+            text-align: center;
+            padding-top: 10%;
+            padding-left: 20%;
+            padding-right: 20%;
+            margin-right: 0px;
+
+        }
+        .parent {
+            position: relative;
+        }
+    }
+    
+     // CONTENT OF HOMEPAGE 
+    
+     
+    .products-background {
+        background-color: #D8FFF7; 
+        .product-content {
+            .container {
+                width: 100%;
+                text-align: center; 
+                padding: 0px;
+                .img-responsive {
+                    width: 100%;
+                }
+                .row {
+                    width: 100%;
+                    padding: 0px;
+                    margin-right: 0px;
+                    margin-left: 0px;
+                    img{
+                        width: 100%;
+                        min-height: 101px;
+                    }
+                    #caption-style-4 {
+                        list-style-type: none;
+                        margin: 0px;
+                        padding: 0px;
+                        display: inline-block;
+                        
+                        
+                        .caption-boxes {
+                            display: inline-block;
+                            padding: 0;
+                            position: relative;
+                            overflow: hidden;
+                            
+                            img {
+                                margin: 0px;
+                                padding: 0px;
+                                float: left;
+                                z-index: 4;
+
+                                -webkit-transition:all 0.25s ease-in-out;
+                                -moz-transition:all 0.25s ease-in-out;
+                                -o-transition:all 0.25s ease-in-out;
+                                -ms-transition:all 0.25s ease-in-out;
+                                transition:all 0.25s ease-in-out;
+                                
+                                -webkit-transition: all 1s ease;
+                                -moz-transition: all 1s ease;
+                                -o-transition: all 1s ease;
+                                -ms-transition: all 1s ease;
+                                transition: all 1s ease;
+                            }
+                            .img-responsive:hover {
+                                -webkit-filter: brightness(50%);
+
+                            }
+                            .caption {
+                                cursor: pointer;
+                                position: absolute;
+                                opacity: 0;
+                                -webkit-transition:all 0.45s ease-in-out;
+                                -moz-transition:all 0.45s ease-in-out;
+                                -o-transition:all 0.45s ease-in-out;
+                                -ms-transition:all 0.45s ease-in-out;
+                                transition:all 0.45s ease-in-out;
+                                /*.blur {
+                                    background-color: rgba(0,0,0,0.65);
+                                    height: 100%;
+                                    width: 100%;
+                                    z-index: 5;
+                                    position: absolute;
+                                }*/
+                                .caption-text{
+                                    z-index: 10;
+                                    color: #fff;
+                                    position: absolute;
+                                    left: 70px;
+                                    text-align: center;
+                                   
+                                    h1 {
+                                        text-transform: uppercase;
+                                        font-size: 34px;
+                                        color: white;
+                                        font-family: 'Engineering';
+                                        
+                                    }
+                                    p {
+                                        width: 150px;
+                                        margin-right: 0px; 
+                                        font-size: 24px;
+                                        color: white;
+                                        font-family: 'Engineering';
+                                    }
+                                }
+                            }
+                        }
+                        .caption-boxes:hover {
+                            img {
+                                opacity: 1;
+                                transform: scale(1.15,1.15);
+                                -webkit-transform:scale(1.15,1.15);
+                                -moz-transform:scale(1.15,1.15);
+                                -ms-transform:scale(1.15,1.15);
+                                -o-transform:scale(1.15,1.15);
+                                
+                            }
+                            .caption {
+                                opacity: 1;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .product-options {
+        text-align: center;
+        width: 100%;
+        
+        background:  url('../images/PANO_20160223_085748.jpg') no-repeat center center fixed; 
+        -webkit-filter: brightness(50%);
+       
+        .container {
+            padding-top: 10%;
+           
+            .row {
+                width: 100%;
+                margin: 0px;
+                .col-md-4 {
+                    padding: 0px;
+                    margin: 0px;
+                    .thumbnail {
+                        background-color: white;
+                        border: 0px;
+                        text-align: center;
+                        h3 {
+                            margin: 0px;
+                        }
+                    }
+                }
+                #first-box {
+                    padding-right: 2%;   
+                }
+                #second-box {
+                    padding-left: 2%;
+                    padding-right: 2%;
+                }
+                #third-box {
+                    padding-right: 2%;
+                    padding-left: 2%;
+                }
+            }
+        }
+    }
+}
+    
