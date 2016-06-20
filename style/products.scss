@@ -4,80 +4,6 @@ body {
     height: 100%;
     margin: 0px 20px;
     background: url('../images/bgImage2.jpg');
-    
-    
-     #header-container {
-        position: relative;
-        width: 100%;
-        padding: 0px;
-        .header {
-            width: 100%;
-            display: inline-block;
-            position: absolute;
-            z-index: 4;
-                a:after {
-                    content: '';
-                    display: block;
-                    margin: auto;
-                    height: 3px;
-                    width: 0px;
-                    background: transparent;
-                    transition: width .5s ease, background-color .5s ease;
-                 }
-             a:hover:after {
-                width: 100%;
-                background: #0FFFD6;
-            }
-            .header-main-logo{
-                position: relative;
-                z-index: 4;
-                min-height: 110px;
-                display: inline-block;
-                float: left;
-                img {
-                    max-width: 140px;
-                    max-height: 110px;
-                    float: left;
-                }
-            }
-            .header-no-logo {
-                margin: 0;
-                padding: 0 0 80px 0;
-                position: relative;
-                width: 100%;
-                max-height: 100px;
-                background-color: #000000;
-                z-index: 2;
-            }
-
-
-            nav {
-                font-size: 18px;
-                font-weight: 200;
-                z-index: 3;
-                background-color: azure;
-           //   max-height: 80px;
-                opacity: 0.7;
-                .nav-main_ul {
-           //       padding-top: 30px;
-                    list-style-type: none;
-            //      position: absolute;
-                    li {
-                        padding: 0px 15px 0px 0px;
-                        display: inline;
-                        float: left;
-
-                        a {
-                            color: #000000;
-                            text-decoration: none;
-                            text-transform: uppercase;
-                        }
-                    }
-                }
-            } 
-        }
-    }
-        
     .products-banner {
         background: url('../images/2013-07-18-094.jpg') no-repeat center center fixed; 
         -webkit-background-size: cover;
@@ -97,14 +23,17 @@ body {
             padding-left: 20%;
             padding-right: 20%;
             margin-right: 0px;
-
+            .cover-container {
+                padding-top: 10%;
+                padding-bottom: 10%;
+            }
         }
         .parent {
             position: relative;
         }
     }
     
-     // CONTENT OF HOMEPAGE 
+     
     
      
     .products-background {
@@ -116,6 +45,7 @@ body {
                 padding: 0px;
                 .img-responsive {
                     width: 100%;
+                    height: 100%;
                 }
                 .row {
                     width: 100%;
@@ -132,35 +62,30 @@ body {
                         padding: 0px;
                         display: inline-block;
                         
-                        
                         .caption-boxes {
                             display: inline-block;
                             padding: 0;
                             position: relative;
                             overflow: hidden;
                             
+                            
                             img {
                                 margin: 0px;
                                 padding: 0px;
                                 float: left;
                                 z-index: 4;
-
+                                -webkit-filter: blur(0.5px);
                                 -webkit-transition:all 0.25s ease-in-out;
                                 -moz-transition:all 0.25s ease-in-out;
                                 -o-transition:all 0.25s ease-in-out;
                                 -ms-transition:all 0.25s ease-in-out;
                                 transition:all 0.25s ease-in-out;
-                                
-                                -webkit-transition: all 1s ease;
-                                -moz-transition: all 1s ease;
-                                -o-transition: all 1s ease;
-                                -ms-transition: all 1s ease;
-                                transition: all 1s ease;
                             }
                             .img-responsive:hover {
                                 -webkit-filter: brightness(50%);
-
+                                 
                             }
+                            
                             .caption {
                                 cursor: pointer;
                                 position: absolute;
@@ -170,6 +95,8 @@ body {
                                 -o-transition:all 0.45s ease-in-out;
                                 -ms-transition:all 0.45s ease-in-out;
                                 transition:all 0.45s ease-in-out;
+                                
+                                
                                 /*.blur {
                                     background-color: rgba(0,0,0,0.65);
                                     height: 100%;
@@ -221,33 +148,109 @@ body {
             }
         }
     }
+    
+    // SERVICES STYLE
+    .services-background {
+            background: url(../images/secondBG.jpg) no-repeat center center fixed;
+            background-size: cover; 
+            .services-intro {
+                .container {
+                    width: 100%;
+                    text-align: center; 
+                    padding: 10% 10% 10% 10%;
+                    .img-responsive {
+                        width: 100%;
+                    }
+                    .row {
+                        width: 100%;
+                        padding: 0px;
+                        margin-right: 0px;
+                        margin-left: 0px;
+                        #caption-style-1 {
+                            list-style-type: none;
+                            display: inline-block;
+                            background-color: cornflowerblue;
+                            //opacity: 0.9;
+                            padding-left: 5%;
+                            padding-right: 5%;
+
+                            h3 {
+                                font-family: 'Engineering';
+                                display: inline-block;
+                                font-size: 25px;
+                            }
+                            p {
+                                font-family: 'Engineering';
+                                display: inline-block;
+                                font-size: 20px;
+                            }
+                        }
+                        #caption-style-2 {
+                            list-style-type: none;
+                            display: inline-block;
+                            background-color: cornflowerblue;
+                            //opacity: 0.9;
+                            padding-left: 5%;
+                            padding-right: 5%;
+
+                            h3 {
+                                font-family: 'Engineering';
+                                display: inline-block;
+                                font-size: 25px;
+                            }
+                            p {
+                                font-family: 'Engineering';
+                                display: inline-block;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    
     .product-options {
         text-align: center;
         width: 100%;
-        
-        background:  url('../images/PANO_20160223_085748.jpg') no-repeat center center fixed; 
-        -webkit-filter: brightness(50%);
-       
+        //background:  url('../images/2013-07-18-094.jpg') no-repeat center center fixed; 
+        background-color: cornflowerblue;
         .container {
-            padding-top: 10%;
-           
+            padding-bottom: 10%;
+            text-align: center;
+            #main-image {
+                padding-top: 10%;
+                padding-bottom: 2.5%;
+                position: relative;
+                margin: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
             .row {
                 width: 100%;
                 margin: 0px;
                 .col-md-4 {
-                    padding: 0px;
+                    padding-top: 7%;
+                    padding-bottom: 7%;
                     margin: 0px;
+                    
+                    -webkit-filter: drop-shadow(0px 0px 50px rgba(0,0,0,.5));
                     .thumbnail {
                         background-color: white;
                         border: 0px;
-                        text-align: center;
+                        padding: 0px;
                         h3 {
                             margin: 0px;
+                            font-family: 'Engineering';
+                            text-align: left;
+                            padding-left: 5%;
                         }
                     }
                 }
                 #first-box {
                     padding-right: 2%;   
+                    padding-left: 2%;
                 }
                 #second-box {
                     padding-left: 2%;
@@ -261,4 +264,56 @@ body {
         }
     }
 }
+    
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0px;
+        .gallery {
+            bottom: 5px;   
+        }
+        .navbar-default .navbar-nav > li > a {
+            display: inline-block !important;
+        }
+    .container {
+        padding: 0px !important;
+            footer {
+             height: 100% !important;
+             display: inline-block !important;
+             text-align: center !important;
+             position: relative !important;
+                .to-top {
+                    top: -90px !important;  
+                    left: 12% !important;
+                }
+                .footer-content {
+                 width: 100% !important;
+                 padding: 0px !important;
+                }
+                ul {
+
+                }
+                h5 {
+                 font-size: 20px !important;   
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    nav {
+        max-height: 80px;
+        .navbar-right {
+            .nav-visit {
+                font-size: 14px;   
+            }
+        }
+    }
+} 
+
+
+    
+    
+    
+
     
