@@ -1,0 +1,364 @@
+@font-face {font-family: Engineering; src: url('../Fonts/Siliwangi Engineering/Siliwangi Engineering.otf')}
+
+.products-main {
+    height: 100%;
+    margin: 0px 20px;
+    background: url('../images/bgImage2.jpg');
+    .products-banner {
+        background: url('../images/2013-07-18-094.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+        height: 100%;
+        background-color: #060;
+        color: #fff;
+        text-align: center;
+        text-shadow: 0 1px 3px rgba(0,0,0,.5);
+        .container {
+            width: 100%;
+            text-align: center;
+            padding-top: 10%;
+            padding-left: 20%;
+            padding-right: 20%;
+            margin-right: 0px;
+            .cover-container {
+                padding-top: 10%;
+                padding-bottom: 10%;
+            }
+        }
+        .parent {
+            position: relative;
+        }
+    }
+    
+     
+    
+     
+    .products-background {
+        background-color: #D8FFF7; 
+        .product-content {
+            .container {
+                width: 100%;
+                text-align: center; 
+                padding: 0px;
+                .img-responsive {
+                    width: 100%;
+                    height: 100%;
+                }
+                .row {
+                    width: 100%;
+                    padding: 0px;
+                    margin-right: 0px;
+                    margin-left: 0px;
+                    img{
+                        width: 100%;
+                        min-height: 101px;
+                    }
+                    #caption-style-4 {
+                        list-style-type: none;
+                        margin: 0px;
+                        padding: 0px;
+                        display: inline-block;
+                        border-top: 2px solid black;
+                        
+                        .caption-boxes {
+                            display: inline-block;
+                            padding: 0;
+                            position: relative;
+                            overflow: hidden;
+                            
+                            
+                            img {
+                                margin: 0px;
+                                padding: 0px;
+                                float: left;
+                                z-index: 4;
+                                -webkit-filter: blur(0.5px);
+                                -webkit-transition:all 0.25s ease-in-out;
+                                -moz-transition:all 0.25s ease-in-out;
+                                -o-transition:all 0.25s ease-in-out;
+                                -ms-transition:all 0.25s ease-in-out;
+                                transition:all 0.25s ease-in-out;
+                            }
+                            .img-responsive:hover {
+                                -webkit-filter: brightness(50%);
+                                 
+                            }
+                            
+                            .caption {
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                                position: absolute;
+                                opacity: 0;
+                                -webkit-transition:all 0.45s ease-in-out;
+                                -moz-transition:all 0.45s ease-in-out;
+                                -o-transition:all 0.45s ease-in-out;
+                                -ms-transition:all 0.45s ease-in-out;
+                                transition:all 0.45s ease-in-out;
+                                
+                                
+                                /*.blur {
+                                    background-color: rgba(0,0,0,0.65);
+                                    height: 100%;
+                                    width: 100%;
+                                    z-index: 5;
+                                    position: absolute;
+                                }*/
+                                .caption-text {
+                                    cursor: pointer;
+                                    border: 1px solid white;
+                                    z-index: 10;
+                                    color: #fff;
+                                    text-align: center;
+                                    padding: 25px;
+                                    border-radius: 5px;
+                                    h1 {
+                                        text-transform: uppercase;
+                                        font-size: 34px;
+                                        color: white;
+                                        font-family: 'Engineering';
+                                        
+                                    }
+                                    p {
+                                        margin-right: 0px; 
+                                        font-size: 24px;
+                                        color: white;
+                                        font-family: 'Engineering';
+                                    }
+                                }
+                            }
+                        }
+                        .caption-boxes:hover {
+                            img {
+                                opacity: 1;
+                                transform: scale(1.15,1.15);
+                                -webkit-transform:scale(1.15,1.15);
+                                -moz-transform:scale(1.15,1.15);
+                                -ms-transform:scale(1.15,1.15);
+                                -o-transform:scale(1.15,1.15);
+                                
+                            }
+                            .caption {
+                                opacity: 1;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    // SERVICES STYLE
+    .services-background {
+            background: url(../images/productsBG2.jpg) no-repeat center center fixed;
+            background-size: cover; 
+            .services-intro {
+                .container {
+                    width: 100%;
+                    text-align: center; 
+                    padding: 10% 10% 10% 10%;
+                    .img-responsive {
+                        width: 100%;
+                    }
+                    .row {
+                        width: 100%;
+                        padding: 0px;
+                        margin-right: 0px;
+                        margin-left: 0px;
+                        .col-md-4 {
+                            background-color: white;
+                            opacity: 0.8;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        }
+                        #caption-style-1 {
+                            list-style-type: none;
+                            display: inline-block;
+                            padding-left: 5%;
+                            padding-right: 5%;
+
+
+                            h3 {
+                                font-family: 'Engineering';
+                                display: inline-block;
+                                font-size: 25px;
+                            }
+                            p {
+                                font-family: 'Engineering';
+                                display: inline-block;
+                                font-size: 20px;
+                            }
+                        }
+                        #caption-style-2 {
+                            list-style-type: none;
+                            display: inline-block;
+                            padding-left: 5%;
+                            padding-right: 5%;
+
+                            h3 {
+                                font-family: 'Engineering';
+                                display: inline-block;
+                                font-size: 25px;
+                            }
+                            p {
+                                font-family: 'Engineering';
+                                display: inline-block;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    
+    .product-options {
+        text-align: center;
+        width: 100%;
+        //background:  url('../images/2013-07-18-094.jpg') no-repeat center center fixed; 
+        background-color: darksalmon;
+        .container {
+            padding-bottom: 10%;
+            text-align: center;
+            #main-image {
+                padding-top: 10%;
+                padding-bottom: 2.5%;
+                position: relative;
+                margin: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+            .row {
+                width: 100%;
+                margin: 0px;
+                .col-md-4 {
+                    padding-top: 7%;
+                    padding-bottom: 7%;
+                    margin: 0px;
+                    
+                    -webkit-filter: drop-shadow(0px 0px 50px rgba(0,0,0,.5));
+                    .thumbnail {
+                        background-color: white;
+                        border: 0px;
+                        padding: 0px;
+                        h3 {
+                            margin: 0px;
+                            font-family: 'Engineering';
+                            text-align: left;
+                            padding-left: 5%;
+                        }
+                    }
+                }
+                #first-box {
+                    padding-right: 2%;   
+                    padding-left: 2%;
+                }
+                #second-box {
+                    padding-left: 2%;
+                    padding-right: 2%;
+                }
+                #third-box {
+                    padding-right: 2%;
+                    padding-left: 2%;
+                }
+            }
+        }
+    }
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+
+    #plans {
+        background: url('../images/1_2.gif'); 
+        background-size: contain;
+        background-repeat: round;
+    }
+.panel-pricing {
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+.panel-pricing:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+.panel-pricing .panel-heading {
+  padding: 20px 10px;
+}
+.panel-pricing .panel-heading .fa {
+  margin-top: 10px;
+  font-size: 58px;
+    &:before {
+               
+    }
+}
+.panel-pricing .list-group-item {
+  color: #777777;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+}
+.panel-pricing .list-group-item:last-child {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.panel-pricing .list-group-item:first-child {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.panel-pricing .panel-body {
+  background-color: #f0f0f0;
+  font-size: 40px;
+  color: #777777;
+  padding: 20px;
+  margin: 0px;
+}
+
+    
+}
+    
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0px;
+        .gallery {
+            bottom: 5px;   
+        }
+        .navbar-default .navbar-nav > li > a {
+            display: inline-block !important;
+        }
+    .container {
+        padding: 0px !important;
+            footer {
+             height: 100% !important;
+             display: inline-block !important;
+             text-align: center !important;
+             position: relative !important;
+                .to-top {
+                    top: -90px !important;  
+                    left: 12% !important;
+                }
+                .footer-content {
+                 width: 100% !important;
+                 padding: 0px !important;
+                }
+                ul {
+
+                }
+                h5 {
+                 font-size: 20px !important;   
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    nav {
+        max-height: 80px;
+        .navbar-right {
+            .nav-visit {
+                font-size: 14px;   
+            }
+        }
+    }
+} 
