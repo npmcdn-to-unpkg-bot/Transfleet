@@ -1,0 +1,156 @@
+body {
+    .contact-section {
+        width: 100%;
+        background: url(../images/productsBG2.png) no-repeat;
+        background-size: cover;
+        .container-fluid {
+            .row {
+                .col-md-4 {
+                    text-align: center;
+                    background: url(../images/get-in-touch-bg.png) no-repeat;
+                    background-size: cover;
+                    
+                    header {
+                        width: 320px;
+                        height: 190px;
+                        padding: 18px 20px;
+                        margin-bottom: 55px;
+                        margin-right: 0;
+                        border: 12px solid rgba(156, 150, 158, 0.07);
+                        float: right;
+                        h1 {
+                            font-size: 60px;
+                            font-weight: 700;
+                            line-height: 70px;
+                            text-transform: uppercase;
+                            color: #e2db1a;
+                            margin-left: -110px;
+                            font-family: 'Montserrat', sans-serif;
+                            span {
+                                color: antiquewhite;
+                                font-family: 'Montserrat', sans-serif;
+                            }
+                        }
+                    }
+                    ul {
+                        li {
+                            list-style-type: none;
+                            padding-bottom: 35px;
+                            span {
+                                color: white;
+                                font-size: 16px;
+                                font-weight: 400;
+                                text-transform: uppercase;
+                                display: block;
+                                font-family: 'Montserrat', sans-serif;
+                            }
+                            a {
+                                line-height: 27px;
+                                color: #e2db1a;
+                                display: block;
+                                font-size: 16px;
+                                font-weight: 400;
+                                font-family: 'Montserrat', sans-serif;
+                            }
+                            i {
+                                line-height: 27px;
+                                color: #e2db1a;
+                                display: block;
+                                font-size: 16px;
+                                font-weight: 400;
+                                font-family: 'Montserrat', sans-serif;
+                            }
+                        }
+                    }
+                }
+                .col-md-8 {
+                    .contacts_form {
+                        padding-right: 50px;
+                        padding-left: 50px;
+                        form {
+                            padding-top: 15px;
+                            padding-left: 10px;
+                            input {
+                                padding: 10px 15px;
+                                display: inline-block;
+                                margin-top: 5px;
+                                margin-bottom: 37px;
+                                width: 100%;
+                                background: transparent;
+                                border: none;
+                                border-bottom: 2px solid #fff;
+                                outline: none;
+                                color: white;
+                                font-family: 'Montserrat';
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 25px;
+                                -webkit-appearance: textfield;
+                            }
+                            textarea {
+                                padding: 10px 15px;
+                                display: inline-block;
+                                margin-top: 5px;
+                                margin-bottom: 37px;
+                                width: 100%;
+                                background: transparent;
+                                border: none;
+                                border-bottom: 2px solid #fff;
+                                outline: none;
+                                color: white;
+                                font-family: 'Montserrat';
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 25px;
+                            }
+                            button {
+                                background: transparent;
+                                outline: none;
+                                border: 1px solid rgba(63, 66, 73, 0.8);
+                                padding: 0 45px 0 50px;
+                                color: white;
+                                float: right;
+                                font-size: 12px;
+                                font-weight: 400;
+                                line-height: 45px;
+                                text-transform: uppercase;
+                                transition: all 0.35s ease-in;
+                                
+                                .bg_arrow {
+                                    margin-left: 10px;
+                                    display: inline-block;
+                                    width: 25px;
+                                    height: 7px;
+                                    background: url("../images/bg-arrow-sendbtn.png") 0 0 no-repeat;
+                                }
+                            }
+                            button:hover {
+                                background: rgba(52, 46, 54, 0.55);
+                            }
+                            .content-footer {
+                                display: inline-block;
+                                span {
+                                    color: white;
+                                    font-family: 'Montserrat', sans-serif;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 25px;
+                                    text-transform: uppercase;
+                                    padding-top: 5%;
+                                    small {
+                                        color: #e2db1a;
+                                        font-family: 'Montserrat', sans-serif;
+
+                                        font-weight: 400;
+                                        line-height: 25px;
+                                        text-transform: uppercase;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
