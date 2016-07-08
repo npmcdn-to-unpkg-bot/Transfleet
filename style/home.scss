@@ -25,6 +25,18 @@ body {
             width: 100%;
             background: #0FFFD6;
         }
+        .dropdown-menu {
+         a {
+             color: #000;
+             width: 100px;
+            }
+        }
+        a {
+         color: #fff;
+            &:hover {
+                color: #576764;   
+            }
+        }
 		.header-main-logo{
             position: relative;
             z-index: 4;
@@ -81,10 +93,34 @@ body {
     .gallery {
         z-index: 1;
   //    bottom: 115px;
-     img {
-         display:block;
-         min-width: 100%;
-     //    height: auto;  
+        .cell {
+            position: relative;
+            width: 100%;
+            img {
+                display:block;
+                min-width: 100%;
+                //    height: auto;  
+            }
+            h2 {
+                position: absolute; 
+                top: 200px; 
+                left: 10px; 
+                width: 100%; 
+                border-left: 5px solid orange;
+               
+                span {
+                   
+                    color: white; 
+                    font: bold 24px/45px 'Helvetica', Sans-Serif; 
+                    letter-spacing: 1px;  
+                    background: rgb(0, 0, 0); /* fallback color */
+                    background: rgba(0, 0, 0, 0.7);
+                    padding: 10px; 
+                    .spacer {
+                        padding: 0 5px;
+                    }
+                }
+            }
         }
     }
     
@@ -115,6 +151,7 @@ body {
                         opacity: 0.96;   
                     }
                     .homepage-section1 {
+                        display: none;      //DON'T NEED IT FOR NOW  
                         position: absolute;
                         top: 71em;
                         left: 35%;
@@ -138,6 +175,7 @@ body {
                         }
                     }
                     .homepage-section2 {
+                        display: none;
                         position: absolute;
                         top: 110em;
                         background: #fff;
@@ -157,6 +195,70 @@ body {
                         }
                         p {
                             margin: 0;
+                        }
+                    }
+                    .index-bottom-part {
+                        width: 100%;
+                        color: #fff;
+                        /*.star-light {
+                            border-color: black;
+                            margin: 25px auto 30px;
+                            padding: 0;
+                            max-width: 250px;
+                            border: 0;
+                            border-top: solid 5px;
+                            text-align: center;
+                            border-color: #fff;
+                            
+                        }
+                        .star-light:after {
+                           background: transparent;
+                           content: "\f005";
+                           display: inline-block;
+                           position: relative;
+                           top: -.8em;
+                           padding: 0 .25em;
+                           font-family: 'FontAwesome';
+                           font-size: 3em;
+                        }*/
+                        .strike {
+                            display: block;
+                            text-align: center;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            span {
+                                
+                                position: relative;
+                                display: inline-block;
+                            }
+                            span:before {
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                width: 200px;
+                                height: 5px;
+                                background: white;
+                            } 
+                            span:after {
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                width: 200px;
+                                height: 5px;
+                                background: white;
+                            }
+                            span:before {
+                                 right: 100%;
+                                 margin-right: 15px;
+                            }
+                            span:after {
+                                left: 100%;
+                                margin-left: 15px;
+                            }
+                        }
+                        
+                        h2 {
+                         font-weight: 700;   
                         }
                     }
                     #caption-style-4 {
@@ -471,6 +573,13 @@ http://flickity.metafizzy.co
               min-height: 100%;   
             }
         }
+            #caption-style-4 {
+                .caption-boxes {
+                    margin-left: 0px !important;
+                    margin-right: 0px !important;
+                    width: 100% !important;
+                }
+            }
         footer {
          .footer-content {
              .responsive-center {
@@ -501,7 +610,7 @@ http://flickity.metafizzy.co
         width: 100%;
         position: relative;
         text-align: left;
-        background: #D8FFF8;
+        background: #36C2DB;
         line-height: 25px;
         #top-top-selector {
             display: inline-block;
@@ -509,8 +618,8 @@ http://flickity.metafizzy.co
             text-align: center;
             position: absolute;
             .to-top {
-                background: url('../images/toTop.png');
-                height: 100px;
+                background: url('../images/toTopProper.png');
+                height: 110px;
                 width: 140px;
                 display: inline-block;
                 position: relative;
@@ -538,6 +647,21 @@ http://flickity.metafizzy.co
                         color: #576764;   
                     }
             }
+        .responsive-center {
+            h4 {
+             color: #463634;
+             font-weight: 700;
+            }
+            ul {
+              li {
+                 a {
+                   &:hover {
+                          text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
             .footer-content-col1 {
                 padding: 0 0 0 50px;
                 float: left;
@@ -567,7 +691,6 @@ http://flickity.metafizzy.co
                             bottom: 8px;
                             padding-left: 10px;
                             color: black;
-                            text-decoration: none;
                             &:hover {
                                 color: #576764;   
                             }

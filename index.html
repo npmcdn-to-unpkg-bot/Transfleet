@@ -8,6 +8,7 @@
     <link href="style/bootstrap.min.css" rel="stylesheet">
     <link href="style/style.css" rel="stylesheet">
     <link href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
       <script src="scripts/flickity.pkgd.min.js"></script>
       <link href="style/bootstrap.css" rel="stylesheet">
@@ -18,6 +19,19 @@
       <script src="scripts/main.js"></script>
       <script src="js/modernizr.js"></script> <!-- Modernizr -->
       
+      
+      <script>
+      $(function() {
+    
+    $("h2")
+        .wrapInner("<span>")
+
+    $("h2 br")
+        .before("<span class='spacer'>")
+        .after("<span class='spacer'>");
+
+});
+      </script>
   </head>    
     
 <body>
@@ -47,7 +61,7 @@
                     <li class="dropdown">
                       <a href="products.html">Produdcts<span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="#">Materials</a></li>
+                        <li><a href="materials.html">Materials</a></li>
                         <li><a href="#">Services</a></li>
                       </ul>
                         <li><a href="about.html">Contact</a></li>
@@ -66,10 +80,29 @@
 <div class="gallery js-flickity"
   data-flickity-options='{ "imagesLoaded": true, "percentPosition": false, "autoPlay": true, "setGallerySize": true }'>
  <!--  <div id="kur1"></div> --> 
-  <img src="images/carousel-img-1.jpg" class="img-responsive" alt="peizaj" /> 
-  <img src="images/carousel-img-2.jpg" class="img-responsive" alt="submerged" /> 
-  <img src="images/carousel-img-3.jpg" class="img-responsive" alt="submerged" />
-  <img src="images/carousel-img-4.jpg" class="img-responsive" alt="submerged" />
+    <div class="cell"<h2><span>A Movie in the Park:<span class='spacer'></span><br /><span class='spacer'></span>Kung Fu Panda</span></h2>>
+        <img src="images/carousel-img-1.jpg" class="img-responsive" alt="peizaj" />
+         
+        <h2><span>We Are Prepared for Any Type of Task<span class='spacer'></span><br /><span class='spacer'></span>Which Lays Ahead of Us</span></h2>
+    </div>
+  
+    <div class="cell">
+       <img src="images/carousel-img-2.jpg" class="img-responsive" alt="submerged" /> 
+        <h2><span>We Are Prepared for Any Type of Task<span class='spacer'></span><br /><span class='spacer'></span>Which Lays Ahead of Us</span></h2>
+    </div>
+    
+    <div class="cell">
+        <img src="images/carousel-img-3.jpg" class="img-responsive" alt="submerged" />
+        <h2><span>We Are Prepared for Any Type of Task<span class='spacer'></span><br /><span class='spacer'></span>Which Lays Ahead of Us</span></h2>
+    </div>
+    
+    <div class="cell">
+        <img src="images/carousel-img-4.jpg" class="img-responsive" alt="submerged" />
+        <h2><span>We Are Prepared for Any Type of Task<span class='spacer'></span><br /><span class='spacer'></span>Which Lays Ahead of Us</span></h2>
+    </div>
+  
+  
+  
 </div>    
       <!-- FLICKITY END -->
       
@@ -78,10 +111,16 @@
 <div class="homepage-background">
     <div class="homepage-content">
         <div class="container">
-
-            <div class="row">
-
+            <div class="row index-top-part">
                 <img class="img-responsive lineBg" src="images/lineTop.png">
+                <div class="col-lg-12 text-center index-bottom-part">
+                    <h2>CHECK OUT OUR MATERIALS</h2>
+                    <!--<hr class="star-light">-->
+                    <div class="strike">
+                        <span style="font-size:300%;color:white;">&starf;</span>
+                    </div>
+                    <p>SOME TEXT DESCRIBING HOW AWESOME THE COMPANY IS<br />TEXT DSADSA SADSADSADSA DSADSADSADDSA SADSA<br />DASD SADSA DSA DSADSASADSAADSAD SADSADASDSA<br />DASD SADSA DSA DSADSASADSAADSAD SADSADASDSA<br />DASD SADSA DSA DSADSASADSAADSAD SADSADASDSA<br />DASD SADSA DSA DSADSASADSAADSAD SADSADASDSA</p>
+                </div>
                 <div class="homepage-section1">
                 <p>SOME INSPIRATIONAL TEXT, WHICH EXPLAINS HOW BIG THE COMPANY IS </p>
                 </div>
@@ -111,14 +150,20 @@
                     </div>
                 </div>
                 <img class="img-responsive lineBg" src="images/lineCenterPart2.png">
-            </div>
-
+            </div>      
             
-            
-            <div class="row">
+            <div class="row index-bottom-part">
                 <img class="img-responsive lineBg" src="images/lineCenterPart1.png">
-                                <div class="homepage-section2">
-                <p>SOME INSPIRATIONAL TEXT, WHICH EXPLAINS HOW BIG THE COMPANY IS </p>
+                <div class="col-lg-12 text-center index-bottom-part">
+                    <h2>CHECK OUT OUR MATERIALS</h2>
+                    <!--<hr class="star-light">-->
+                    <div class="strike">
+                        <span style="font-size:300%;color:white;">&starf;</span>
+                    </div>
+                    <p>SOME TEXT DESCRIBING HOW AWESOME THE COMPANY IS<br />TEXT DSADSA SADSADSADSA DSADSADSADDSA SADSA<br />DASD SADSA DSA DSADSASADSAADSAD SADSADASDSA<br />DASD SADSA DSA DSADSASADSAADSAD SADSADASDSA<br />DASD SADSA DSA DSADSASADSAADSAD SADSADASDSA<br />DASD SADSA DSA DSADSASADSAADSAD SADSADASDSA</p>
+                </div>
+                <div class="homepage-section2">
+                    <p>SOME INSPIRATIONAL TEXT, WHICH EXPLAINS HOW BIG THE COMPANY IS </p>
                 </div>
                 <div class="col-md-6" id="caption-style-4">
                     <div class="caption-boxes" id="box-3">
@@ -133,7 +178,6 @@
                     </div>
                 </div>
 
-
                 <div class="col-md-6" id="caption-style-4">
                     <div class="caption-boxes" id="box-4">
                         <img src="images/equipment2.jpg" class="img-responsive">
@@ -146,7 +190,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="img-responsive" src="images/lineBottomBlue.png">
+                <img class="img-responsive" src="images/lineBottom2.png">
             </div>
         </div>
     </div>
@@ -161,17 +205,16 @@
     </div>
         <div class="footer-content">
           <div class="footer-content-col1 responsive-center">
-            <h5>Heading one</h5>
+            <h4>Contact us</h4>
             <ul>
-              <li><a href="#">First link</a></li>
-              <li><a href="#">First link</a></li>
-              <li><a href="#">First link</a></li>
-              <li><a href="#">First link</a></li>
+              <li><a href="#">General Enquiries</a></li>
+              <li><a href="#">Press and media</a></li>
+              <li><a href="#">FAQs</a></li>
             </ul>
           </div>
             
           <div class="footer-content-col2 responsive-center">
-            <h5>Heading two</h5>
+            <h4>Connect</h4>
             <ul>
               <li><a href="#">Facebook</a></li>
               <li><a href="#">Twitter</a></li>
@@ -181,7 +224,7 @@
           </div>
             
           <div class="footer-content-col3 responsive-center">
-            <h5>Heading two</h5>
+            <h4>Heading two</h4>
             <ul>
               <li><a href="#">First link</a></li>
               <li><a href="#">Second link</a></li>
@@ -191,7 +234,7 @@
           </div>
             
           <div class="footer-content-col4 responsive-center">
-            <h5>Heading two</h5>
+            <h4>Latest Tweet</h4>
             <ul>
               <li><a href="#">First link</a></li>
               <li><a href="#">Second link</a></li>
