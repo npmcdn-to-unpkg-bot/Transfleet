@@ -1,0 +1,182 @@
+
+    .materials-main {
+    margin: 0;
+    .materials-banner {
+        background: url('../images/2013-07-18-094.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+        height: 100%;
+        background-color: #060;
+        color: #fff;
+        text-align: center;
+        text-shadow: 0 1px 3px rgba(0,0,0,.5);
+        .container {
+            width: 100%;
+            text-align: left;
+            padding: 10% 10% 10% 10%;
+            margin-right: 0px;
+            .row {
+                .cover-container {
+                    padding-top: 10%;
+                    padding-bottom: 10%;
+                    display: inline-block;
+                }
+            }
+            
+        }
+        .parent {
+            position: relative;
+        }
+    }
+    .materials-section {    
+        background: url('../images/materialsbackground.jpg') no-repeat center center fixed; 
+        .container {
+            .row {
+                .col-lg-12 {
+                    .materials-header {
+                        padding-bottom: 9px;
+                        margin: 40px 0 20px;
+                        border-bottom: 1px solid black;
+                    }
+                }
+                .col-md-5 {
+                    h3 {
+                        color: antiquewhite;
+                    }
+                    h4 {
+                        color: antiquewhite;
+                    }
+                    p {
+                        color: antiquewhite;
+                    }
+                    .view-pdf {
+                        background: transparent;
+                        border: 2px solid white;
+                        
+                        position: relative;
+                        padding: 0.3em 1em;
+                        border: 2px solid;
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        border-radius: 3px;
+                        background: transparent;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 1.7em !important;
+                        -webkit-transition: all 0.2s;
+                        -moz-transition: all 0.2s;
+                        transition: all 0.2s;
+                        
+                        
+                    }
+                    .view-pdf:after {
+                         position: absolute;
+                        margin-left: -1em;
+                        opacity: 0;
+                        font-size: 32px;
+                        line-height: 1em;
+                        content: "\203A";
+                        -webkit-transition: all 0.2s;
+                        -moz-transition: all 0.2s;
+                        transition: all 0.2s;
+                    }
+                    .view-pdf:hover {
+                        background: rgba(255, 255, 255, 0.2);
+                        padding: 0.3em 2em 0.3em 1em;
+                        border: 2px solid transparent;
+                    }
+                    .view-pdf:hover:after {
+                        
+                        margin-left: 7px;
+                        opacity: 1;
+                        
+                       
+                    }
+                }
+            }
+            .text-center {
+                .col-lg-12 {
+                   .paginate.pag5 { /* fifth page styles */ 
+                        font-size: 1.4em;
+                        padding: 9px 8px;
+                        background: #373943;
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        border-radius: 3px;
+                        width: 100%;
+                        margin-bottom: 10%;
+                        li { 
+                            font-weight: bold; 
+                            display: inline-block;
+                            a {
+                                display: block;
+                                float: left;
+                                color: #5ea25a;
+                                text-decoration: none;
+                                padding: 0px 12px;
+                                margin-right: 6px;
+                                border-radius: 16px;
+                                background: #fff;
+                                -webkit-transition: all 0.3s linear;
+                                -moz-transition: all 0.3s linear;
+                                transition: all 0.3s linear;
+                            }
+                            a:hover {
+                                color: #4f664e;
+                                background: #c9dec8;
+                            }
+                            a:active {
+                                -webkit-box-shadow: 1px 1px 3px -1px rgba(0,0,0, .55);
+                                -moz-box-shadow: 1px 1px 3px -1px rgba(0,0,0, .55);
+                                box-shadow: 1px 1px 3px -1px rgba(0,0,0, .55);
+                            }
+                        }
+                        .navpage {
+                            a { 
+                                padding: 0px 13px;
+                                background: #c8eac6;
+                                color: #4f664e;
+                            }
+                            a:hover {
+                                color: #414e40;
+                                background: #a4c6a2;
+                            }
+                        }
+                        .current {
+                            background: #505362; 
+                            
+                        }
+                        
+                        .current {
+                            display: inline-block;
+                            padding: 0px 12px;
+                            margin-right: 6px;
+                            border-radius: 16px;
+                            color: #fff;
+                        }
+                    }
+                    .clearfix {
+                        display: inline-block; 
+                    }
+                    .clearfix:after { 
+                        content: "."; 
+                        display: block; 
+                        clear: both; 
+                        visibility: hidden; 
+                        line-height: 0; 
+                        height: 0; 
+                    }
+                }
+            }
+            hr {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border: 0;
+                border-top: 1px solid black;
+            }
+        }
+    }
+}
