@@ -1,3 +1,10 @@
+// Import Roboto font
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
+// Import Font Awesome
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+
 
     .materials-main {
     margin: 0;
@@ -32,7 +39,8 @@
         }
     }
     .materials-section {    
-        background: url('../images/materialsbackground.jpg') no-repeat center center fixed; 
+        background: url('../images/41750_1_miscellaneous_digital_art_simple_dark_shapes.jpg') no-repeat center center fixed; 
+        background-size: cover;
         .container {
             .row {
                 .col-lg-12 {
@@ -76,7 +84,7 @@
                          position: absolute;
                         margin-left: -1em;
                         opacity: 0;
-                        font-size: 32px;
+                        font-size: 30px;
                         line-height: 1em;
                         content: "\203A";
                         -webkit-transition: all 0.2s;
@@ -92,91 +100,96 @@
                         
                         margin-left: 7px;
                         opacity: 1;
-                        
-                       
                     }
                 }
-            }
-            .text-center {
-                .col-lg-12 {
-                   .paginate.pag5 { /* fifth page styles */ 
-                        font-size: 1.4em;
-                        padding: 9px 8px;
-                        background: #373943;
-                        -webkit-border-radius: 3px;
-                        -moz-border-radius: 3px;
-                        border-radius: 3px;
-                        width: 100%;
-                        margin-bottom: 10%;
-                        li { 
-                            font-weight: bold; 
-                            display: inline-block;
-                            a {
-                                display: block;
-                                float: left;
-                                color: #5ea25a;
-                                text-decoration: none;
-                                padding: 0px 12px;
-                                margin-right: 6px;
-                                border-radius: 16px;
-                                background: #fff;
-                                -webkit-transition: all 0.3s linear;
-                                -moz-transition: all 0.3s linear;
-                                transition: all 0.3s linear;
-                            }
-                            a:hover {
-                                color: #4f664e;
-                                background: #c9dec8;
-                            }
-                            a:active {
-                                -webkit-box-shadow: 1px 1px 3px -1px rgba(0,0,0, .55);
-                                -moz-box-shadow: 1px 1px 3px -1px rgba(0,0,0, .55);
-                                box-shadow: 1px 1px 3px -1px rgba(0,0,0, .55);
-                            }
-                        }
-                        .navpage {
-                            a { 
-                                padding: 0px 13px;
-                                background: #c8eac6;
-                                color: #4f664e;
-                            }
-                            a:hover {
-                                color: #414e40;
-                                background: #a4c6a2;
-                            }
-                        }
-                        .current {
-                            background: #505362; 
-                            
-                        }
-                        
-                        .current {
-                            display: inline-block;
-                            padding: 0px 12px;
-                            margin-right: 6px;
-                            border-radius: 16px;
-                            color: #fff;
+                #pagination-section {
+                    text-align: center;
+                    .pagination-container {
+                        margin-top: 1em;
+                        padding-top: 2em;
+                        text-align: center;
+                    }   
+
+                    .pagination__item {
+                        list-style-type: none;
+                        display: inline-block;
+                    }
+
+                    .pagination__item:hover,
+                    .pagination__item.is-active {
+
+                        .pagination__link {
+                             //border-top:1px solid #fa4248;
+                            border-bottom: 3px solid #0fffd6;
+                            color: #023A49;
+                            font-weight: bold;
+                            border-left: 0px;
+                            border-right: 0px;
+                            border-top: 0px;
                         }
                     }
-                    .clearfix {
-                        display: inline-block; 
+
+                    .pagination__link {
+                        background: transparent;
+                        padding: 0.8em 1em;
+                        display: inline-block;
+                        text-decoration: none;
+                        color: #0fffd6;
+                        //border-top: 1px solid #d7dadb;
+                        border-bottom: 3px solid #d7dadb;
+                        border-left: 0px;
+                        border-right: 0px;
+                        border-top: 0px;
+                        font-size: 20px;
+                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
                     }
-                    .clearfix:after { 
-                        content: "."; 
-                        display: block; 
-                        clear: both; 
-                        visibility: hidden; 
-                        line-height: 0; 
-                        height: 0; 
+
+                    .pagination-item__wide {
+                        //@extend .pagination-item;
+                        list-style-type: none;
+                        display: inline-block;
                     }
+
+                    .pagination-link__wide:hover {
+                        color: #fa4248;
+                    }
+
+                    .pagination__link.first:before,
+                    .pagination__link.previous:before,
+                    .pagination__link.next:after,
+                    .pagination__link.last:after {
+                      font-family: 'FontAwesome';
+                      speak: none;
+                      font-style: normal;
+                      font-weight: normal;
+                      font-variant: normal;
+                      text-transform: none;
+                      line-height: 1;
+
+                      // Better Font Rendering
+                      -webkit-font-smoothing: antialiased;
+                      -moz-osx-font-smoothing: grayscale;
+                    }
+
+                    .pagination__link.first::before {
+                        content: "\f100";
+                    }
+
+                    .pagination__link.previous::before {
+                        content: "\f104";
+                    }
+
+                    .pagination__link.next::after {
+                        content: "\f105";
+                    }
+
+                    .pagination__link.last::after {
+                        content: "\f101";
+                    }   
                 }
-            }
-            hr {
-                margin-top: 20px;
-                margin-bottom: 20px;
-                border: 0;
-                border-top: 1px solid black;
             }
         }
+        
     }
 }
+
