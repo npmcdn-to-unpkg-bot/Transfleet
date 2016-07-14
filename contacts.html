@@ -15,7 +15,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="scripts/bootstrap.min.js"></script>
-      <script src="scripts/main.js"></script>
+      <script src="scripts/contacts.js"></script>
       <script src="js/modernizr.js"></script> <!-- Modernizr -->
    </head>
     
@@ -24,10 +24,9 @@
       
   <div class="container" id="header-container">
     <header class="header js-header">
-        <div class="header-main-logo">
-            <img src="images/Transfleet_LOGO_ 1.jpg">
-        </div>
         
+            <img src="images/Transfleet_LOGO_1.jpg">
+
             <nav class="navbar-default">
               <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -87,11 +86,11 @@
                   
                   <div class="col-md-8">
                       <div class="contacts_form">
-                          <form>
-                              <input type="text" placeholder="Name" name="name" minlength="2"  maxlength="100" required="required" >
-                              <input type="text" placeholder="Email" name="email"  maxlength="100"  required="required">
+                          <form method="post" action="contacts.php" role="form">
+                              <input type="text" placeholder="Name" name="name" minlength="2"  maxlength="100" required="required">
+                              <input type="text" placeholder="Email" name="email"  maxlength="100"  required="required" >
                               <input type="text" placeholder="Subject" maxlength="400" required="required">
-                              <textarea placeholder="Message"></textarea>
+                              <textarea placeholder="Message" ></textarea>
                               <button>Send <i class="bg_arrow"></i></button>
                               
                               <div class="content-footer">
@@ -105,20 +104,26 @@
           </div>
       </div>
       
+    <div class="location-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 align-center col-md-offset-2">
+                    <h1>This is Our<span> Location</span></h1>
+                    <p>Lorem ipsum dolor sit amet, porttitor vehicula. Ante non, hendrerit nibh habitasse ornare luctus, dolor fermentum, bibendum leo. At nostra mauris mauris viverra sed mauris, cras vitae orci quis tincidunt id tempor, non aptent vel mauris, in nibh wisi sociis ut, pellentesque iaculis quam elit.</p>
+                    </div>
+            </div>
+        </div>
+    </div> 	
       
-      <div class="google-api-section">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d616.3537032158434!2d23.32821436298677!3d42.706074505797645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa8563d35886bf%3A0xc7dd02c708365b10!2sul.+%22Timok%22%2C+1202+Sofia!5e0!3m2!1sen!2sbg!4v1467752503553" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen>
-           </iframe>
-          
-    </div>
+      <div class='embed-container  maps'>
+          <iframe width='100%' height='600' frameborder='0' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155419.5727920435!2d13.426141949999993!3d52.507541899999964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e2b719cf2f3%3A0x8dba8fa58c57d186!2sBerlin!5e0!3m2!1sen!2sde!4v1411014193840">  </iframe>
+      </div>
       
       
       <!-- FOOTER START -->
     <div class="container" id="footer-container">
       <footer class="footer">
-    <div class="container" id="top-top-selector">
-        <a class="to-top" href="#0"></a>
-    </div>
+    
         <div class="footer-content">
           <div class="footer-content-col1 responsive-center">
             <h4>Contact us</h4>
