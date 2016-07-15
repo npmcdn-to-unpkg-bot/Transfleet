@@ -11,10 +11,11 @@
     position: relative;
     width: 100%;
     padding: 0px;
+    max-height: 80px;
 	.header {
         width: 100%;
         display: inline-block;
-        position: absolute;
+        position: relative;
         z-index: 4;
             a:after {
                 content: '';
@@ -32,12 +33,12 @@
 		.header-main-logo{
             position: relative;
             z-index: 4;
-            min-height: 110px;
+            min-height: 80px;
             display: inline-block;
             float: left;
 			img {
 				max-width: 210px;
-				max-height: 110px;
+				max-height: 80px;
                 float: left;
                 width: auto;
                 height: auto;
@@ -62,7 +63,7 @@
             z-index: 3;
             background-color: #000;
        //   max-height: 80px;
-            opacity: 0.7;
+            opacity: 1;
             .nav-main_ul {
        //       padding-top: 30px;
                 list-style-type: none;
@@ -84,11 +85,17 @@
 }
     
     .header {
-        position: absolute;
+        position: relative;
         width: 97%;
     }
     .materials-banner {
-        background: url('../images/2013-07-18-094.jpg') no-repeat center center fixed; 
+       background: url('../images/bannerDesign2.png'); 
+        
+
+/*background: #834d9b; /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to left, #834d9b , #d04ed6); /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to left, #834d9b , #d04ed6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -102,36 +109,62 @@
         .container {
             width: 100%;
             text-align: left;
-            padding: 10% 10% 10% 10%;
+            padding: 15% 0% 0% 0%;
             margin-right: 0px;
             .row {
-                .cover-container {
-                    padding-top: 10%;
-                    padding-bottom: 10%;
-                    display: inline-block;
+                margin: 0px;
+                padding: 0px;
+                    .col-md-4 {
+                        padding: 0px 0px 15% 0px;
+                        text-align: center;
+                        h3 {
+                            
+                            text-transform: uppercase;
+                            color: #e2db1a;
+                            font-family: 'Montserrat', sans-serif;  
+                        }
+                        p {
+                           
+                            text-transform: uppercase;
+                            color: azure;
+                            font-family: 'Montserrat', sans-serif;  
+                        }
+                    }
+                    #first-box {
+                        
+                    }
                 }
-            }
-            
         }
         .parent {
             position: relative;
         }
     }
     .materials-section {    
-        background: url('../images/materialsBG2.jpg') no-repeat center center fixed; 
+        background: url('../images/materialsBG.jpg') no-repeat center center fixed; 
         background-size: cover;
         .container {
             .row {
                 padding-bottom: 5%;
+                padding: 0px 0px 10% 0px;
+                width: 100%;
                 .col-lg-12 {
                     text-align: center;
                     .materials-header {
                         padding-bottom: 9px;
                         margin: 40px 0 20px;
                         border-bottom: 1px solid black;
+                        text-transform: uppercase;
+                        color: #e2db1a;
+                        font-family: 'Montserrat', sans-serif;
+                        small {
+                            text-transform: uppercase;
+                            color: floralwhite;
+                            font-family: 'Montserrat', sans-serif;
+                        }
                     }
                 }
                 .col-md-5 {
+                    padding: 0px 2.5% 0px 2.5%;
                     h3 {
                         color: antiquewhite;
                     }
