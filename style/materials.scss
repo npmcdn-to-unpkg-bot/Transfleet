@@ -89,7 +89,7 @@
         width: 97%;
     }
     .materials-banner {
-       background: url('../images/bannerDesign2.png'); 
+       background: url('../images/servicesBanner.png'); 
         
 
 /*background: #834d9b; /* fallback for old browsers */
@@ -139,14 +139,163 @@
             position: relative;
         }
     }
-    .materials-section {    
+    .materials-section {   
         background: url('../images/materialsBG.jpg') no-repeat center center fixed; 
         background-size: cover;
         .container {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            
+            .services-structure {
+                .container {
+                    #services-img {
+                        .lightbox_trigger {
+                            padding: 0;
+                            width: auto;
+                            height: auto;
+                            display: block;
+                            max-width: 500px;
+                       }
+                        ul {
+                            list-style-type: none;
+                            li {
+                                a {
+                                    img {
+                                        -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.8), inset 0 2px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.4);
+                                        -moz-box-shadow: inset 0 0 1px rgba(0,0,0,.8), inset 0 2px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.4);
+                                        box-shadow: inset 0 0 1px rgba(0,0,0,.8), inset 0 2px 0 rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.4);
+
+                                        -webkit-border-radius: 20px;
+                                        -moz-border-radius: 20px;
+                                        border-radius: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                        .view-pdf {
+                            background: transparent;
+                            border: 2px solid white;
+                            position: relative;
+                            padding: 0.3em 1em;
+                            border: 2px solid;
+                            -webkit-border-radius: 3px;
+                            -moz-border-radius: 3px;
+                            border-radius: 3px;
+                            background: transparent;
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 1.7em !important;
+                            -webkit-transition: all 0.2s; 
+                            -moz-transition: all 0.2s;
+                            transition: all 0.2s;    
+                        }
+                        .view-pdf:after {
+                             position: absolute;
+                            margin-left: -1em;
+                            opacity: 0;
+                            font-size: 32px;
+                            line-height: 1em;
+                            content: "\203A";
+                            -webkit-transition: all 0.2s;
+                            -moz-transition: all 0.2s;
+                            transition: all 0.2s;
+                        }
+                        .view-pdf:hover {
+                            background: rgba(255, 255, 255, 0.2);
+                            padding: 0.3em 2em 0.3em 1em;
+                            border: 2px solid transparent;
+                        }
+                        .view-pdf:hover:after { 
+                            margin-left: 7px;
+                            opacity: 1;     
+                        }
+                    }
+                }
+            
+            .services-structure-part2 {
+                background: #36c2db;
+                 .container {
+                     border-top: 2px solid #cdd0d1;
+                       
+                 .row {
+                     .col-md-6{
+                         .lightbox_trigger {
+                             padding: 0;
+                             width: auto;
+                             height: auto;
+                             display: block;
+                             max-width: 500px;
+                             .img-responsive {
+                                  padding: 0px;
+                                  -webkit-border-radius: 20px;
+                                  -moz-border-radius: 20px;
+                                  border-radius: 20px;
+                              }
+                           }
+                           ul {
+                               list-style-type: none;
+                               
+                           }
+                         
+                       }
+                        #services-info1 {
+                            color: #fff;
+                            .view-pdf {
+                                background: transparent;
+                                border: 2px solid white;
+                                position: relative;
+                                padding: 0.3em 1em;
+                                border: 2px solid;
+                                -webkit-border-radius: 3px;
+                                -moz-border-radius: 3px;
+                                border-radius: 3px;
+                                background: transparent;
+                                font-size: 20px;
+                                font-weight: 500;
+                                line-height: 1.7em !important;
+                                -webkit-transition: all 0.2s;
+                                -moz-transition: all 0.2s;
+                                transition: all 0.2s;    
+                            }
+                            .view-pdf:after {
+                                position: absolute;
+                                margin-left: -1em;
+                                opacity: 0;
+                                font-size: 32px;
+                                line-height: 1em;
+                                content: "\203A";
+                                -webkit-transition: all 0.2s;
+                                -moz-transition: all 0.2s;
+                                transition: all 0.2s;
+                            }
+                            .view-pdf:hover {
+                                background: rgba(255, 255, 255, 0.2);
+                                padding: 0.3em 2em 0.3em 1em;
+                                border: 2px solid transparent;
+                            }
+                            .view-pdf:hover:after { 
+                                margin-left: 7px;
+                                opacity: 1;     
+                            }
+                        } 
+                    }
+                }
+            }
+            
             .row {
-                padding-bottom: 5%;
-                padding: 0px 0px 10% 0px;
+        //        padding-bottom: 5%;
+        //        border-top: 2px solid white;
+        //        border-bottom: 2px solid white; 
+       //         padding: 5% 0px 5% 0px;
                 width: 100%;
+                margin: 0;
+                img {
+                    &:hover {
+                     //   border: 2px solid #fff;
+                    }
+                }
                 .col-lg-12 {
                     text-align: center;
                     .materials-header {
@@ -173,49 +322,6 @@
                     }
                     p {
                         color: antiquewhite;
-                    }
-                    .view-pdf {
-                        background: transparent;
-                        border: 2px solid white;
-                        
-                        position: relative;
-                        padding: 0.3em 1em;
-                        border: 2px solid;
-                        -webkit-border-radius: 3px;
-                        -moz-border-radius: 3px;
-                        border-radius: 3px;
-                        background: transparent;
-                        font-size: 20px;
-                        font-weight: 500;
-                        line-height: 1.7em !important;
-                        -webkit-transition: all 0.2s;
-                        -moz-transition: all 0.2s;
-                        transition: all 0.2s;
-                        
-                        
-                    }
-                    .view-pdf:after {
-                         position: absolute;
-                        margin-left: -1em;
-                        opacity: 0;
-                        font-size: 32px;
-                        line-height: 1em;
-                        content: "\203A";
-                        -webkit-transition: all 0.2s;
-                        -moz-transition: all 0.2s;
-                        transition: all 0.2s;
-                    }
-                    .view-pdf:hover {
-                        background: rgba(255, 255, 255, 0.2);
-                        padding: 0.3em 2em 0.3em 1em;
-                        border: 2px solid transparent;
-                    }
-                    .view-pdf:hover:after {
-                        
-                        margin-left: 7px;
-                        opacity: 1;
-                        
-                       
                     }
                 }
                 
@@ -311,5 +417,14 @@
             border-top: 1px solid black;
         }
     }
+        #lightbox {
+        a {
+            width: 190px;
+            height: 50px;
+            display: inline-block;
+            background: #36c2db;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    }
 }
-

@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <!-- Bootstrap -->
     <link href="style/bootstrap.min.css" rel="stylesheet">
+    <link href="style/lightbox.css" rel="stylesheet">
     <link href="style/style.css" rel="stylesheet">
-    <link href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css" rel="stylesheet">
+    <link href="style/materials.scss" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-      <script src="style/flickity.pkgd.min.js"></script>
       <link href="style/bootstrap.css" rel="stylesheet">
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+      <script src="scripts/products.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="scripts/bootstrap.min.js"></script>
-      <script src="scripts/main.js"></script>
+      <script src="scripts/materials.js"></script>
       <script src="js/modernizr.js"></script> <!-- Modernizr -->
+      
   </head>
+  <body class="materials-main services-main products-main">
     
-  <body class="materials-main">
-    
-<div class="container" id="header-container">
+    <div class="container" id="header-container">
     <header class="header js-header">
         <div class="header-main-logo">
             <img src="images/Transfleet_LOGO_1.jpg">
@@ -47,9 +48,10 @@
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produdcts<span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="#">Catalogue</a></li>
+                        <li><a href="materials.html">Materials</a></li>
+                        <li><a href="services.html">Services</a></li>
                       </ul>
-                        <li><a href="about.html">Contact</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
                     </li>
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
@@ -61,24 +63,22 @@
     </header>        
 </div>
     
-    
 <div class="materials-banner">
      <div class="container parent">
          <div class="row">
-             
-             <div class="col-md-4">
-                
-             </div>
-             
-             <div class="col-md-4">
-                
-             </div>
-             
+             <div class="col-md-4"></div>
+             <div class="col-md-4"></div> 
          </div>
       </div>
  </div> 
+    
+ <!-- Product page CONTENT END -->   
 
-    <div class="materials-section">
+        <!-- START OF PROJECTS CAROUSEL -->
+    
+        <!-- Wrapper for slides -->
+    
+        <div class="materials-section">
         <div class="container">
             <!-- Materials Header -->
             <div class="row">
@@ -86,97 +86,128 @@
                     <h1 class="materials-header">Materials <small>from TRANSFLEET</small></h1>
                 </div>
             </div>
-            
-            <div class="row">
-                <div class="col-md-7">
-                    <a href="#"><img src="images/prod11.JPG" class="img-responsive"></a>
-                </div>
-                
-                <div class="col-md-5">
-                    <h3>Material name</h3>
-                    <h4>Subtext</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-                    <a class="btn btn-primary view-pdf" href="http://www.bodossaki.gr/userfiles/file/dummy.pdf">View PDF</a>
-                </div>
-            </div>
-          
-            <div class="row">
-                <div class="col-md-7">
-                    <a href="#"><img src="images/prod12.JPG" class="img-responsive"></a>
-                </div>
-                
-                <div class="col-md-5">
-                    <h3>Material name</h3>
-                    <h4>Subtext</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-                    <a class="btn btn-primary view-pdf" href="http://www.bodossaki.gr/userfiles/file/dummy.pdf">View PDF</a>
-                </div>
-            </div>
-           
-            <div class="row">
-                <div class="col-md-7">
-                    <a href="#"><img src="images/prod13.JPG" class="img-responsive"></a>
-                </div>
-                
-                <div class="col-md-5">
-                    <h3>Material name</h3>
-                    <h4>Subtext</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-                    <a class="btn btn-primary view-pdf" href="http://www.bodossaki.gr/userfiles/file/dummy.pdf">View PDF</a>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-md-7">
-                    <a href="#"><img src="images/prod14.JPG" class="img-responsive"></a>
-                </div>
-                
-                <div class="col-md-5">
-                    <h3>Material name</h3>
-                    <h4>Subtext</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-                    <a class="btn btn-primary view-pdf" href="http://www.bodossaki.gr/userfiles/file/dummy.pdf">View PDF</a>
-                </div>
-            </div>
-           
-            <div class="row">
-                <div class="col-md-7">
-                    <a href="#"><img src="images/prod15.JPG" class="img-responsive"></a>
-                </div>
-                
-                <div class="col-md-5">
-                    <h3>Material name</h3>
-                    <h4>Subtext</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-                    <a class="btn btn-primary view-pdf" href="http://www.bodossaki.gr/userfiles/file/dummy.pdf">View PDF</a>
-                </div>
-            </div>
+    
+    <div class="services-structure" id="materials-item1">
+         <div class="container">
+             <img src="images/services-structure-img-1.png" class="img-responsive">
+             <div class="row">
+                 <div class="col-md-6" id="services-img">
+                     <ul>
+                        <li>
+                            <a  href="images/Materials/prod13.JPG" class="lightbox_trigger" id="kor"><img src="images/Materials/prod13.JPG" class="img-responsive"></a>
+                        </li>
+                     </ul>
+                 </div>          
+                 <div class="col-md-6" id="services-info services-img">
+                     <p>Lorem ipsum dolor sit amet, tristique et augue ornare dolorem, lacus convallis lobortis, ipsum quam erat duis ac. Donec integer risus in tincidunt neque nunc, risus ut vivamus vitae curabitur, non morbi, mauris eleifend, donec laboriosam amet quam. Quisque vestibulum pede a morbi sed vitae, vitae sapien vitae eu amet ac, arcu rutrum pellentesque malesuada quisque ligula imperdiet, enim potenti ultrices, cras molestie non ut in. At vestibulum vitae urna, pellentesque felis blandit non nibh, nunc sed augue vivamus lacus.</p>
+                     <a class="btn btn-primary view-pdf" href="http://www.bodossaki.gr/userfiles/file/dummy.pdf">View PDF</a>              
+                 </div>
+             </div>
+         </div>
+    </div>
             
             
             
+<div class="services-structure-part2" id="materials-item2">
+     <div class="container">
+         <img src="images/services-structure-img-2.png" class="img-responsive">       
+         <div class="row">
+             <div class="col-md-6" id="services-info1">
+                 <p>Lorem ipsum dolor sit amet, tristique et augue ornare dolorem, lacus convallis lobortis, ipsum quam erat duis ac. Donec integer risus in tincidunt neque nunc, risus ut vivamus vitae curabitur, non morbi, mauris eleifend, donec laboriosam amet quam. Quisque vestibulum pede a morbi sed vitae, vitae sapien vitae eu amet ac, arcu rutrum pellentesque malesuada quisque ligula imperdiet, enim potenti ultrices, cras molestie non ut in. At vestibulum vitae urna, pellentesque felis blandit non nibh, nunc sed augue vivamus lacus.</p>
+                 <a class="btn btn-primary view-pdf" href="http://www.bodossaki.gr/userfiles/file/dummy.pdf">View PDF</a>  
+             </div>
+             
+             <div class="col-md-6" id="services-img1 services-img">
+                 <ul>
+                    <li>
+                        <a  href="images/Materials/prod12-lightbox.JPG" class="lightbox_trigger" id="kor"><img src="images/Materials/prod12.png" class="img-responsive"></a>
+                    </li>
+                 </ul>
+             </div>
+         </div>
+     </div>
+ </div>   
+            
+<div class="services-structure" id="materials-item3">
+     <div class="container">
+         <img src="images/services-structure-img-1.png" class="img-responsive">
+         <div class="row">
+             <div class="col-md-6" id="services-img">
+                 <ul>
+                    <li>
+                        <a  href="images/Materials/prod15.JPG" class="lightbox_trigger" id="kor"><img src="images/Materials/prod15.JPG" class="img-responsive"></a>
+                    </li>
+                 </ul>
+             </div>          
+             <div class="col-md-6" id="services-info services-img">
+                 <p>Lorem ipsum dolor sit amet, tristique et augue ornare dolorem, lacus convallis lobortis, ipsum quam erat duis ac. Donec integer risus in tincidunt neque nunc, risus ut vivamus vitae curabitur, non morbi, mauris eleifend, donec laboriosam amet quam. Quisque vestibulum pede a morbi sed vitae, vitae sapien vitae eu amet ac, arcu rutrum pellentesque malesuada quisque ligula imperdiet, enim potenti ultrices, cras molestie non ut in. At vestibulum vitae urna, pellentesque felis blandit non nibh, nunc sed augue vivamus lacus.</p>
+                 <a class="btn btn-primary view-pdf" href="http://www.bodossaki.gr/userfiles/file/dummy.pdf">View PDF</a>              
+             </div>
+         </div>
+     </div>
+</div>
+            
+            
+<div class="services-structure-part2" id="materials-item4">
+     <div class="container">
+         <img src="images/services-structure-img-2.png" class="img-responsive">       
+         <div class="row">
+             <div class="col-md-6" id="services-info1">
+                 <p>Lorem ipsum dolor sit amet, tristique et augue ornare dolorem, lacus convallis lobortis, ipsum quam erat duis ac. Donec integer risus in tincidunt neque nunc, risus ut vivamus vitae curabitur, non morbi, mauris eleifend, donec laboriosam amet quam. Quisque vestibulum pede a morbi sed vitae, vitae sapien vitae eu amet ac, arcu rutrum pellentesque malesuada quisque ligula imperdiet, enim potenti ultrices, cras molestie non ut in. At vestibulum vitae urna, pellentesque felis blandit non nibh, nunc sed augue vivamus lacus.</p>
+                 <a class="btn btn-primary view-pdf" href="http://www.bodossaki.gr/userfiles/file/dummy.pdf">View PDF</a>  
+             </div>
+             
+             <div class="col-md-6" id="services-img1 services-img">
+                 <ul>
+                    <li>
+                        <a  href="images/Materials/prod14-lightbox.JPG" class="lightbox_trigger" id="kor"><img src="images/Materials/prod14.png" class="img-responsive"></a>
+                    </li>
+                 </ul>
+             </div>
+         </div>
+     </div>
+ </div>          
+            
+<div class="services-structure" id="materials-item5">
+     <div class="container">
+         <img src="images/services-structure-img-1.png" class="img-responsive">
+         <div class="row">
+             <div class="col-md-6" id="services-img">
+                 <ul>
+                    <li>
+                        <a  href="images/Materials/prod17.JPG" class="lightbox_trigger" id="kor"><img src="images/Materials/prod17.JPG" class="img-responsive"></a>
+                    </li>
+                 </ul>
+             </div>          
+             <div class="col-md-6" id="services-info services-img">
+                 <p>Lorem ipsum dolor sit amet, tristique et augue ornare dolorem, lacus convallis lobortis, ipsum quam erat duis ac. Donec integer risus in tincidunt neque nunc, risus ut vivamus vitae curabitur, non morbi, mauris eleifend, donec laboriosam amet quam. Quisque vestibulum pede a morbi sed vitae, vitae sapien vitae eu amet ac, arcu rutrum pellentesque malesuada quisque ligula imperdiet, enim potenti ultrices, cras molestie non ut in. At vestibulum vitae urna, pellentesque felis blandit non nibh, nunc sed augue vivamus lacus.</p>
+                 <a class="btn btn-primary view-pdf" href="http://www.bodossaki.gr/userfiles/file/dummy.pdf">View PDF</a>              
+             </div>
+         </div>
+     </div>
+</div>
             
             <div class="row">
                 <div class="col-lg-12" id="pagination-section">
                     <ul class="pagination">
                         <li class="pagination__item first"> <a class="pagination__link first" href="materials.html"></a> </li>
                         <li class="pagination__item previous"> <a class="pagination__link previous" href="materials1.html"></a> </li>
+                        
                         <li class="pagination__item"> <a class="pagination__link" href="materials.html">1</a> </li>
                         <li class="pagination__item"> <a class="pagination__link" href="materials1.html">2</a> </li>
                         <li class="pagination__item is-active"> <a class="pagination__link" href="materials2.html">3</a> </li>
                         <li class="pagination__item"> <a class="pagination__link" href="materials3.html">4</a> </li>
-                        <li class="pagination__item"> <a class="pagination__link" href="materials4.html">5</a> </li>
+                        
                         <li class="pagination__item next"> <a class="pagination__link next" href="materials3.html"></a> </li>
-                        <li class="pagination__item last"> <a class="pagination__link last" href="materials4.html"></a></li>
+                        <li class="pagination__item last"> <a class="pagination__link last" href="materials3.html"></a></li>
                     </ul>
                 </div>
-            </div>
+            </div>   
+        </div>
+    </div>        
             
             
             
-        </div> 
-    </div>
-    
-    
 <!-- FOOTER START -->
 <div class="container" id="footer-container">
   <footer class="footer">
@@ -230,10 +261,6 @@
 </div>
 
 <!-- FOOTER END -->
-      
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    
   </body>
 </html>
